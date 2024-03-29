@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: rgb(44, 44, 44);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      width: 400px;
+      padding: 30px;
+      background-color: rgb(255, 255, 255);
+      box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2), 0px 0px 30px rgba(0, 0, 0, 0.1);
+      margin: auto;
+      border-radius: 10px;
+    }
+    .login-box:hover {
+        box-shadow: 0px 0px 40px rgba(255, 255, 255, 0.4); /* Added glowing effect */
+    }
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .logo img {
+      transition: transform .2s;
+      width: 150px;
+    }
+    .logo img:hover {
+      transform: scale(1.1);
+    }
+    .form-heading {
+      text-align: center;
+      font-size: 30px;
+      font-weight: bolder;
+    }
+    .sub-heading {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-control {
+      border-radius: 5px;
+      border-color: rgb(238, 233, 233);
+    }
+    .btn-gradient {
+      background: linear-gradient(to right, #f4d03f, #f2734a);
+      border: 1px solid #333;
+    }
+    .btn-gradient:hover {
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    }
+    .register-link {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .register-link a {
+      color: #ff4000;
+    }
+    .registerit{
+        color: black;
+    }
+    .sub-heading {
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="login-box">
+  <div class="logo">
+    <a href="index.html"><img src="images/PayWise-removebg-preview.png" alt="PayWise Logo"></a>
+  </div>
+  
+  <div class="form-heading">Login</div>
+  <div class="sub-heading">Access to the dashboard!</div>
+  <form>
+    <div class="form-group">
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <input type="password" class="form-control" id="password" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-primary btn-block btn-gradient">Login</button>
+  </form>
+  <div class="register-link">
+    <div class="registerit">Don't have an account? </div>
+    <a href="Register.html">Register here</a>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payroll Management System</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Payroll Management System</h1>
+</header>
+
+<button class="navbar-toggle" onclick="toggleNavbar()">Toggle Navbar</button>
+
+<div class="navbar" id="navbar">
+  <a href="#" class="active" onclick="openSlide('dashboard')">Dashboard</a>
+  <a href="#" onclick="openSlide('profile')">Profile</a>
+  <a href="#" onclick="openSlide('settings')">Settings</a>
+  <a href="#" onclick="openSlide('reports')">Reports</a>
+  <a href="#" onclick="openSlide('employees')">Employees</a>
+  <a href="#" onclick="openSlide('attendance')">Attendance</a>
+  <a href="#" onclick="openSlide('payments')">Payments</a>
+  <a href="#" onclick="openSlide('benefits')">Benefits</a>
+  <a href="#" onclick="openSlide('taxes')">Taxes</a>
+  <a href="#" onclick="openSlide('analytics')">Analytics</a>
+</div>
+
+<div class="content" id="content">
+  <div class="slide active" id="dashboard-slide">
+    <h2>Dashboard</h2>
+    <p>Welcome to the Dashboard section!</p>
+    <!-- Additional content for the dashboard section -->
+  </div>
+  <!-- Add more slides for other sections -->
+</div>
+
+<script src="Javascript/js.js"></script>
+</body>
+</html>

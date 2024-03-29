@@ -1,0 +1,97 @@
+/* Navbar Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #FFA500;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.navbar {
+  background: linear-gradient(to right, #FF8C00, #FFA500);
+  width: 250px;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  transition: width 0.3s ease;
+}
+
+.navbar a {
+  display: block;
+  padding: 16px;
+  color: black;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  background-color: #FFD700;
+}
+
+.navbar .active {
+  background-color: yellow;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+/* Navbar Toggle */
+.navbar-toggle {
+  display: none;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  margin: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    width: 80px;
+  }
+
+  .navbar a {
+    padding: 10px;
+    text-align: center;
+  }
+
+  .navbar .active {
+    background-color: transparent;
+  }
+
+  .content {
+    margin-left: 80px;
+  }
+
+  .navbar-toggle {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .dot {
+    margin: 3px;
+  }
+}
